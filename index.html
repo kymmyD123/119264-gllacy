@@ -1,36 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-      <header>
-          <img src="gllacylogo.png" alt="logo">
-          <nav>
-            <ul class="header-menu">
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О Компании</a></li>
-            </ul>
-          </nav>
-          <nav>
-            <ul>
-              <li><input type="text"></li>
-              <li><input type="text" placeholder="Вход"></li>
-              <li><input type="text" placeholder="Пусто"></li>
-            </ul>
-          </nav>
-          <div class="timetable">
-            <span>С 10 до 20, ежедневно</span>
-            <b class="number"> 8 812 450-25-25</b>
-          </div>
-      </header>
-      <main>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+</head>
+<body>
+<header>
+  <img src="gllacylogo.png" alt="logo">
+  <nav class="main-navigation">
+    <ul class="site-menu">
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="#">Доставка и оплата</a></li>
+      <li><a href="#">О Компании</a></li>
+    </ul>
+  </nav>
+  <ul class="user-menu">
+    <li><a href="#">Поиск</a></li>
+    <li><a href="#">Вход</a></li>
+    <li><a href="#">Пусто</a></li>
+  </ul>
+  <p class="timetable">
+    <span>С 10 до 20, ежедневно</span>
+    <b class="number"> 8 812 450-25-25</b>
+  </p>
+</header>
+<main>
+  <section class="promo">
+    <article class="promo-berry">
+      <h2>Малинка даром!</h2>
+      <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+      <a href="#">Хочу варенье!</a>
+    </article>
+    <article class="promo-chocolate">
+      <h2>Шоколадки даром!</h2>
+      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
+        бесплатно.</p>
+      <a href="#">Хочу шоколадки!</a>
+    </article>
+  </section>
+  <section class="popular">
+    <article class="catalog-item">
 
-      </main>
-      <footer>
+    </article>
 
-      </footer>
-  </body>
+    </article>
+    <article class="catalog-item">
+
+    </article>
+    <article class="catalog-item">
+
+    </article>
+  </section>
+  <section class="about-us">
+    <p>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес:</p>
+    <ul>
+      <li>
+        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+          проверенных временем технологий.</p>
+      </li>
+      <li>
+        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+          связывает долговременное сотрудничество.</p>
+      </li>
+      <li>
+        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+          ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
+      </li>
+      <li>
+        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+          растаять в пути и позволяет сохранить превосходный вкус.</p>
+      </li>
+    </ul>
+  </section>
+  <div class="bottom-content">
+    <article class="our-blog">
+      <span>Новое в нашем блоге</span>
+      <a href="#">
+        10 способов сервировки фруктовых щербетов к столу
+      </a>
+    </article>
+    <div class="subscribe-us">
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+      <input type="text" placeholder="Электронная почта">
+      <input type="button" placeholder="Отправить">
+    </div>
+  </div>
+  <div class="map">
+
+  </div>
+</main>
+<footer>
+  <ul class="social-net">
+    <li class="soc-twit"><a href="#">Твиттер</a></li>
+    <li class="soc-inst"><a href="#">Инстаграм</a></li>
+    <li class="soc-fb"><a href="#">Фейсбук</a></li>
+    <li class="soc-vk"><a href="#">Вк</a></li>
+  </ul>
+  <ul class="site-info">
+    <li>
+      <a href="#">
+        Для поставщиков
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Наши документы
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        О производстве
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        Экологические стандарты
+      </a>
+    </li>
+  </ul>
+  <div class="last">
+    <img src="#" alt="htmlacademy">
+    <p>Сделано в HTML Academy &copy 2017</p>
+  </div>
+</footer>
+</body>
 </html>
