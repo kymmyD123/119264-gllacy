@@ -17,7 +17,6 @@
           <ul>
             <li>
               <a href="#">Новинки</a>
-              <hr width="130px">
             </li>
             <li>
               <a href="#">Сливочное</a>
@@ -42,25 +41,21 @@
     <li>
       <a href="#">
         Поиск
-        <ul>
-          <li class="searching">
+        <form action="" class="search">
             <input type="text" placeholder="Что ищем?">
-          </li>
-        </ul>
+        </form>
       </a>
     </li>
     <li>
       <a href="#">
         Вход
-        <ul>
-          <li class="sign-in">
+        <form action="" class="sign-in">
             <input type="text" placeholder="Электронная почта">
             <input type="text" placeholder="Пароль">
             <input type="button" placeholder="Войти">
             <a href="#">Забыли пароль?</a>
             <a href="#">Новая регистрация</a>
-          </li>
-        </ul>
+        </form>
       </a>
     </li>
     <li>
@@ -68,8 +63,8 @@
     </li>
   </ul>
   <p class="timetable">
-    <span>С 10 до 20, ежедневно</span>
-    <b class="number"> 8 812 450-25-25</b>
+    <div>С 10 до 20, ежедневно</div>
+    <div class="number"> 8 812 450-25-25</div>
   </p>
 </header>
 <main>
@@ -87,47 +82,51 @@
     </article>
   </section>
   <section class="popular">
-    <article class="catalog-item-1">
+    <article class="catalog-item">
         <a href="#">
           <img src="http://placehold.it/150x100" alt="catalog-item">
-        </a>
-      <!-- Временно!   ? -->      <br>
-        <b class="prise">310 &#8381;</b>
+
+      <!-- Временно! -->      <br>
+      <div class="price-wrapper">
+        <span class="price">310 &#8381;</span>
         <span>/кг</span>
-      <a href="#">
+      </div>
+
         <h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
       </a>
     </article>
-    <article class="catalog-item-2">
+    <article class="catalog-item">
         <a href="#">
           <img src="http://placehold.it/150x100" alt="catalog-item">
-        </a>
-      <!-- Временно!   ?  -->     <br>
-        <b class="prise">380 &#8381;0</b>
+
+      <!-- Временно! -->     <br>
+      <div class="price-wrapper">
+        <span class="price">380 &#8381;0</span>
         <span>/кг</span>
-      <a href="#">
+      </div>
+
         <h2>Сливочно-кофейное с кусочками шоколада</h2>
       </a>
     </article>
-    <article class="catalog-item-3">
+    <article class="catalog-item">
         <a href="#">
           <img src="http://placehold.it/150x100" alt="catalog-item">
-        </a>
-     <!-- Временно!   ?  -->       <br>
-        <b class="prise">355 &#8381;</b>
+     <!-- Временно! -->       <br>
+
+        <span class="price">355 &#8381;</span>
         <span>/кг</span>
-      <a href="#">
+      </div>
         <h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
       </a>
     </article>
-    <article class="catalog-item-4">
+    <article class="catalog-item">
         <a href="#">
           <img src="http://placehold.it/150x100" alt="catalog-item">
-        </a>
-      <!--Временно!    ? -->      <br>
-        <b class="prise">415 &#8381;</b>
+      <!--Временно! -->      <br>
+      <div class="price-wrapper">
+        <span class="price">415 &#8381;</span>
         <span>/кг</span>
-      <a href="#">
+      </div>
         <h2>Сливочное крем-брюле с карамельной подливкой</h2>
       </a>
     </article>
@@ -181,10 +180,10 @@
 </main>
 <footer>
   <ul class="social-net">
-    <li class="soc-twit"><a href="#">Твиттер</a></li>
-    <li class="soc-inst"><a href="#">Инстаграм</a></li>
-    <li class="soc-fb"><a href="#">Фейсбук</a></li>
-    <li class="soc-vk"><a href="#">Вк</a></li>
+    <li class="link-twitter"><a href="#">Твиттер</a></li>
+    <li class="link-instagram"><a href="#">Инстаграм</a></li>
+    <li class="link-facebook"><a href="#">Фейсбук</a></li>
+    <li class="link-vkontakte"><a href="#">Вк</a></li>
   </ul>
   <ul class="site-info">
     <li>
@@ -210,7 +209,7 @@
   </ul>
   <div class="last">
     <img src="#" alt="htmlacademy">
-    <p>Сделано в HTML Academy &copy 2017</p>
+    <p>Сделано в HTML Academy &copy; 2017</p>
   </div>
 </footer>
 <section class="form">
