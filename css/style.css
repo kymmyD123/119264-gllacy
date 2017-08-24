@@ -1,8 +1,9 @@
 body {
+  background: url("../img/ice-cream-1.png") top center no-repeat #92ae9f;
   line-height: 12px;
   color: #fff;
-  font-weight: 500;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 h1 {
@@ -21,3 +22,25 @@ h2 {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.visually-hidden {
+  font-size: 0;
+}
+
+.promo-berry {
+  background: url("../img/rawberrie-banner.png") no-repeat;
+}
+
+.promo-chocolate {
+  background: url("../img/chocolate-banner.png") no-repeat;
+}
