@@ -1,9 +1,14 @@
 body {
-  background: url("../img/ice-cream-1.png") top center no-repeat #92ae9f;
+  background: url("../img/ice-cream-1.png") top center no-repeat #8da799;
   line-height: 12px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+}
+
+.wrapper {
+  width: 1146px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -37,10 +42,72 @@ li {
   font-size: 0;
 }
 
+.site-menu .site-menu-punkts {
+}
+
+.main-navigation .site-menu {
+  text-decoration: underline;
+}
+
+.site-menu-punkts a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.site-menu-hover a:hover {
+  background: #fbded8;
+  color: #323232;
+}
+
+.sign-in-button, .cart-button, .search-button{
+  background: #a0b4a9;
+}
+
+.number {
+  font-size: 22px;
+  font-weight: 500;
+}
+
 .promo-berry {
   background: url("../img/rawberrie-banner.png") no-repeat;
 }
 
 .promo-chocolate {
   background: url("../img/chocolate-banner.png") no-repeat;
+}
+
+.catalog-item h2 {
+  text-decoration: underline;
+}
+
+.about-us {
+  background: url("../img/wafle.jpg");
+  border-radius: 5px;
+  width: 100%;
+  color: #000;
+}
+
+.bottom-content .our-blog {
+  background: url("../img/strawberry.png") no-repeat;
+  color: #000;
+}
+
+.bottom-content .our-blog a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.bottom-content .subscribe-us {
+  width: 560px;
+  color: #000;
+  background: #f8f7f4;
+}
+
+
+footer .site-info {
+  text-decoration: underline;
+}
+
+.last span {
+  text-decoration: underline;
 }

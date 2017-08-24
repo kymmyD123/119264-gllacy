@@ -8,41 +8,42 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="wrapper">
 <header>
   <a href="index.html">
-    <img src="img/logo.svg" alt="logo">
+    <img src="img/logo.svg" width="154" height="50" alt="logo">
   </a>
   <nav class="main-navigation">
     <ul class="site-menu">
-      <li>
+      <li class="site-menu-punkts">
         <a href="catalog.html">
           Каталог
           <ul>
-            <li>
-              <a href="#">Новинки</a>
+            <li class="site-menu-hover">
+              Новинки
             </li>
-            <li>
+            <li class="site-menu-hover">
               <a href="#">Сливочное</a>
             </li>
-            <li>
+            <li class="site-menu-hover">
               <a href="#">Щербеты</a>
             </li>
-            <li>
+            <li class="site-menu-hover">
               <a href="#">Фруктовый лед</a>
             </li>
-            <li>
+            <li class="site-menu-hover">
               <a href="#">Мелорин</a>
             </li>
           </ul>
         </a>
       </li>
-      <li><a href="#">Доставка и оплата</a></li>
-      <li><a href="#">О Компании</a></li>
+      <li class="site-menu-punkts"><a href="#">Доставка и оплата</a></li>
+      <li class="site-menu-punkts"><a href="#">О Компании</a></li>
     </ul>
   </nav>
   <ul class="user-menu">
     <li>
-      <a href="#">
+      <a href="#" class="search-button">
         Поиск
         <form class="search" action="">
             <input type="text" placeholder="Что ищем?">
@@ -50,7 +51,7 @@
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="#" class="sign-in-button">
         Вход
         <form class="sign-in" action="">
             <input type="text" placeholder="Электронная почта">
@@ -62,11 +63,12 @@
       </a>
     </li>
     <li>
-      <a href="#">Пусто</a>
+      <a href="#" class="cart-button">Пусто</a>
     </li>
   </ul>
   <p class="timetable">
     <span>С 10 до 20, ежедневно</span>
+    <br>
     <b class="number"> 8 812 450-25-25</b>
   </p>
 </header>
@@ -88,7 +90,7 @@
         <img src="img/content-item-2.png" width="267" height="267" alt="catalog-item">
 
       <!-- Временно!   ?  -->     <br>
-      <span class="price">380 &#8381;0</span>
+      <span class="price">380 &#8381;</span>
       <span>/кг</span>
         <h2>Сливочно-кофейное с кусочками шоколада</h2>
       </a>
@@ -124,7 +126,7 @@
       <a href="#">
         <img src="img/content-item-6.png" width="267" height="267" alt="catalog-item">
       <!-- Временно!   ?  -->     <br>
-      <span class="price">410 &#8381;0</span>
+      <span class="price">410 &#8381;</span>
       <span>/кг</span>
         <h2>Сливочно-черничное с цельными ягодами черники</h2>
       </a>
@@ -160,7 +162,7 @@
       <a href="#">
         <img src="img/content-item-10.png" width="267" height="267" alt="catalog-item">
       <!-- Временно!   ?  -->     <br>
-      <span class="price">435 &#8381;0</span>
+      <span class="price">435 &#8381;</span>
       <span>/кг</span>
         <h2>Сливочноe с ментоловым сиропом</h2>
       </a>
@@ -223,8 +225,9 @@
   </ul>
   <div class="last">
     <img src="img/logo-htmlacademy.svg" width="120" height="50" alt="htmlacademy">
-    <p>Сделано в HTML Academy &copy; 2017</p>
+    <p>Сделано в <span>HTML Academy</span> &copy; 2017</p>
   </div>
 </footer>
+</div>
 </body>
 </html>
