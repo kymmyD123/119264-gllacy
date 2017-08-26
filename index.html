@@ -10,12 +10,14 @@
 <body>
 <div class="wrapper">
 <header>
+<div class="wrapper-menu">
+<div class="left-side-wrapper-menu">
   <a href="index.html">
       <img src="img/logo.svg" width="154" height="50" alt="logo">
   </a>
   <nav class="main-navigation">
     <ul class="site-menu">
-      <li class="site-menu-punkts">
+      <li class="site-menu-section">
         <a href="catalog.html">
            Каталог
           <ul>
@@ -37,13 +39,15 @@
           </ul>
         </a>
       </li>
-      <li class="site-menu-punkts"><a href="#">Доставка и оплата</a></li>
-      <li class="site-menu-punkts"><a href="#">О Компании</a></li>
+      <li class="site-menu-section"><a href="#">Доставка и оплата</a></li>
+      <li class="site-menu-section"><a href="#">О Компании</a></li>
     </ul>
   </nav>
+</div>
+<div class="right-side-wrapper-menu">
   <ul class="user-menu">
     <li>
-      <a href="#" class="search-button">
+      <a href="#" class="header-button">
         Поиск
         <form action="" class="search">
             <input type="text" placeholder="Что ищем?">
@@ -51,7 +55,7 @@
       </a>
     </li>
     <li>
-      <a class="sign-in-button" href="#">
+      <a class="header-button" href="#">
         Вход
         <form action="" class="sign-in">
             <input type="text" placeholder="Электронная почта">
@@ -63,9 +67,11 @@
       </a>
     </li>
     <li>
-      <a href="#" class="cart-button">Пусто</a>
+      <a href="#" class="header-button">Пусто</a>
     </li>
   </ul>
+</div>
+</div>
   <p class="timetable">
     <div>С 10 до 20, ежедневно</div>
     <div class="number"> 8 812 450-25-25</div>
@@ -91,34 +97,29 @@
     <article class="catalog-item">
         <a href="#">
           <img src="img/content-item-1.png" width="267" height="267" alt="catalog-item">
-
-      <!-- Временно! -->      <br>
+          <br>
       <div class="price-wrapper">
         <span class="price">310 &#8381;</span>
         <span>/кг</span>
       </div>
-
         <h2>Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
       </a>
     </article>
     <article class="catalog-item">
         <a href="#">
           <img src="img/content-item-2.png" width="267" height="267" alt="catalog-item">
-
-      <!-- Временно! -->     <br>
+          <br>
       <div class="price-wrapper">
         <span class="price">380 &#8381;</span>
         <span>/кг</span>
       </div>
-
         <h2>Сливочно-кофейное с кусочками шоколада</h2>
       </a>
     </article>
     <article class="catalog-item">
         <a href="#">
           <img src="img/content-item-3.png" width="267" height="267" alt="catalog-item">
-     <!-- Временно! -->       <br>
-
+          <br>
         <span class="price">355 &#8381;</span>
         <span>/кг</span>
         <h2>Сливочно-клубничное с присыпкой из белого шоколада</h2>
@@ -127,7 +128,7 @@
     <article class="catalog-item">
         <a href="#">
           <img src="img/content-item-4.png" width="267" height="267" alt="catalog-item">
-      <!--Временно! -->      <br>
+          <br>
       <div class="price-wrapper">
         <span class="price">415 &#8381;</span>
         <span>/кг</span>
@@ -162,7 +163,6 @@
     <h2 class="visually-hidden">Банер</h2>
     <article class="our-blog">
       <span>Новое в нашем блоге</span>
-      <br>
       <a href="#">
         10 способов сервировки фруктовых щербетов к столу
       </a>
@@ -186,7 +186,6 @@
       <input type="button" placeholder="Форма обратной связи">
     </article>
   </div>
-
 </main>
 <footer>
   <h2 class="visually-hidden">Мы в социальных сетях</h2>
@@ -219,8 +218,8 @@
     </li>
   </ul>
   <div class="last">
-    <img src="img/logo-htmlacademy.svg" width="120" height="50" alt="htmlacademy">
-    <p>Сделано в <span>HTML Academy</span> &copy; 2017</p>
+    <a href="#"><img src="img/logo-htmlacademy.svg" width="120" height="50" alt="htmlacademy"></a>
+    <p>Сделано в <a href="htmlacademy.ru">HTML Academy</a> &copy; 2017</p>
   </div>
 </footer>
 </div>

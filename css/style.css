@@ -33,23 +33,26 @@ a {
   color: #fff;
 }
 
-ul,
-li {
-  list-style: none;
-}
-
 .visually-hidden {
   font-size: 0;
 }
 
-.site-menu .site-menu-punkts {
+.wrapper-menu {
+  display: flex;
+  justify-content: space-between;
 }
 
-.main-navigation .site-menu {
+.left-side-wrapper-menu {
+  display: flex;
+}
+
+.site-menu {
+  display: flex;
+  list-style: none;
   text-decoration: underline;
 }
 
-.site-menu-punkts a:hover {
+.site-menu-section a:hover {
   background: #fff;
   color: #000;
 }
@@ -59,7 +62,7 @@ li {
   color: #323232;
 }
 
-.sign-in-button, .cart-button, .search-button{
+.header-button, .header-button, .header-button {
   background: #a0b4a9;
 }
 
@@ -68,12 +71,35 @@ li {
   font-weight: 500;
 }
 
+.promo {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .promo-berry {
   background: url("../img/rawberrie-banner.png") no-repeat;
+  width: 560px;
+  margin-right: 26px;
 }
 
 .promo-chocolate {
   background: url("../img/chocolate-banner.png") no-repeat;
+  width: 560px;
+}
+
+.popular {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.catalog-item {
+  width: 267px;
+  margin-right: 26px;
+  text-align: center;
+}
+
+.catalog-item:last-child {
+  margin-right: 0;
 }
 
 .catalog-item h2 {
@@ -87,27 +113,43 @@ li {
   color: #000;
 }
 
-.bottom-content .our-blog {
+.bottom-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.our-blog {
+  width: 560px;
+  margin-right: 26px;
   background: url("../img/strawberry.png") no-repeat;
   color: #000;
 }
 
-.bottom-content .our-blog a {
+.our-blog a {
   color: #000;
   text-decoration: underline;
 }
 
-.bottom-content .subscribe-us {
+.subscribe-us {
   width: 560px;
   color: #000;
   background: #f8f7f4;
 }
 
-
-footer .site-info {
+.site-info {
   text-decoration: underline;
 }
 
-.last span {
+footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-net {
+  display: flex;
+}
+
+.last a {
   text-decoration: underline;
 }
