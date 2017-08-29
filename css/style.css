@@ -69,7 +69,7 @@ a {
   color: #323232;
 }
 
-.header-button, .header-button, .header-button {
+.header-button {
   background: #a0b4a9;
 }
 
@@ -78,7 +78,7 @@ a {
   list-style: none;
 }
 
-.number {
+.phone-number {
   font-size: 22px;
   font-weight: 500;
 }
