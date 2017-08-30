@@ -1,14 +1,14 @@
 body {
   /*background: url("../img/ice-cream-1.png") top center no-repeat #8da799;*/
   background-color: #8da799;
-  line-height: 12px;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  line-height: 22px;
 }
 
 .wrapper {
-  width: 1146px;
+  width: 1148px;
   margin: 0 auto;
 }
 
@@ -28,14 +28,37 @@ h2 {
   font-family: 'Roboto', sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
 a {
   font-weight: 500;
   text-decoration: none;
   color: #fff;
 }
 
+.button {
+  display: block;
+  padding: 11px 22px;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(160,32,11,.76);
+  background: #f26843;
+  background: linear-gradient(to bottom,#f26843 0,#e74a35 100%);
+  border-radius: 25px;
+  box-shadow: 0 2px 2px rgba(172,16,0,.64);
+  cursor: pointer;
+  color: #ffffff;
+}
+
 .visually-hidden {
-  font-size: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
 }
 
 .wrapper-menu {
@@ -78,6 +101,12 @@ a {
   list-style: none;
 }
 
+.timetable {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .phone-number {
   font-size: 22px;
   font-weight: 500;
@@ -86,17 +115,39 @@ a {
 .promo {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+.promo-item h1 {
+  margin-top: 0;
 }
 
 .promo-berry {
-  background: url("../img/rawberrie-banner.png") no-repeat;
-  width: 560px;
+  background: #b3234c url("../img/rawberrie-banner.png") no-repeat;
   margin-right: 26px;
 }
 
 .promo-chocolate {
-  background: url("../img/chocolate-banner.png") no-repeat;
+  background: #7e594c url("../img/chocolate-banner.png") no-repeat;
+}
+
+.promo-item {
+  border-radius: 15px;
+  padding: 20px;
   width: 560px;
+  font-weight: 700;
+  background-size: cover;
+}
+
+.promo-button {
+  padding: 15px 21px;
+  border-radius: 25px;
+  float: right;
+  margin-right: 22px;
+  margin-top: 40px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 .catalog {
@@ -123,6 +174,11 @@ a {
 .popular {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 35px;
+}
+
+.popular-wrapper {
+  display: flex;
 }
 
 .catalog-item {
@@ -135,39 +191,128 @@ a {
   margin-right: 0;
 }
 
+.catalog-item-title {
+  line-height: 22px;
+}
+
+.price {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.price-wrapper {
+  margin-top: -68px;
+  text-align: left;
+}
+
+.count-size {
+  font-size: 30px;
+  line-height: 45px;
+}
+
 .catalog-item h2 {
   text-decoration: underline;
 }
 
 .about-us {
-  background: url("../img/wafle.jpg");
-  border-radius: 5px;
-  width: 100%;
-  color: #000;
+  background: #eee2c9 url("../img/wafle.jpg");
+  border-radius: 15px;
+  color: #323232;
+  margin-bottom: 40px;
+  padding: 30px 30px 30px 20px;
+}
+
+.about-us-description {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 27px;
+  line-height: 30px;
+}
+
+.about-us ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-us li {
+  list-style: none;
+  width: 541px;
+  padding-left: 68px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.about-us li:nth-child(3),
+.about-us li:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .bottom-content {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-bottom: 40px;
+  align-items: flex-start;
 }
 
 .our-blog {
   width: 560px;
   margin-right: 26px;
-  background: url("../img/strawberry.png") no-repeat;
-  color: #000;
+  background: #ffffff url("../img/strawberry.png") no-repeat;
+  border-radius: 15px;
+  color: #323232;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  min-height: 220px;
 }
 
 .our-blog a {
-  color: #000;
   text-decoration: underline;
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  max-width: 284px;
+  color: #323232;
 }
 
-.subscribe-us {
+.subscribe {
   width: 560px;
-  color: #000;
+  color: #5a5a5a;
+  line-height: 22px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-image: repeating-linear-gradient(-45deg, #fff 5px, #fff 9px, #FE9E90 10px, #FE9E90 14px, #fff 15px, #fff 19px, #92CDFF 20px, #92CDFF 25px);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.subscribe-wrapper {
+  padding: 30px 20px;
   background: #f8f7f4;
+}
+
+.subscribe form {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe input {
+  padding: 10px 13px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 369px;
+}
+
+.subscribe button {
+
 }
 
 .site-info {
@@ -176,6 +321,43 @@ a {
   width: 350px;
   flex-wrap: wrap;
   list-style: none;
+}
+
+.map {
+  margin-left: -27px;
+  position: relative;
+}
+
+.address {
+  width: 304px;
+  background-color: #fff;
+  color: #323232;
+  padding: 35px 25px;
+  border-radius: 15px;
+}
+
+.address span,
+.address b {
+  display: block;
+}
+
+.address b {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.address span {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.address span:first-child {
+  max-width: 150px;
+}
+
+.address .address-margin {
+  margin-bottom: 25px;
 }
 
 footer {
@@ -208,3 +390,4 @@ footer {
 .other-filters {
   display: flex;
 }
+
