@@ -169,6 +169,8 @@ a {
   padding: 0;
   justify-content: flex-end;
   width: 100%;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .popular {
@@ -385,6 +387,70 @@ footer {
 
 .filters {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 900px;
+}
+
+.price-controls {
+  display: flex;
+}
+
+.price-controls input {
+  width: 30px;
+}
+
+.filter-item-fat {
+  display: flex;
+  list-style: none;
+  background-color: #a6b7ae;
+  border: none;
+  border-radius: 25px;
+}
+
+.filter-item-products {
+  display: flex;
+  list-style: none;
+  background-color: #a6b7ae;
+  border-radius: 25px;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.filter-item-price {
+  width: 230px;
+}
+
+.filter-item select {
+  padding: 8px 36px 8px 13px;
+  border-radius: 20px;
+  margin-right: 15px;
+  color: #fff;
+  border: none;
+  vertical-align: center;
+  cursor: pointer;
+  height: 36px;
+  background-color: rgba(248,247,244,.2);
+}
+
+.filter-item legend {
+  margin: 0;
+  padding: 0 0 5px 17px;
+}
+
+.button-accept {
+  border-radius: 25px;
+  width: 147px;
+  background-color: #a6b7ae;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
 }
 
 .other-filters {
