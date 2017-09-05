@@ -1,10 +1,14 @@
 body {
-  /*background: url("../img/ice-cream-1.png") top center no-repeat #8da799;*/
-  background-color: #8da799;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-family: "Roboto", "Arial", sans-serif;
+
+  background-color: #849d8f;
+}
+
+body > input[type="radio"] {
+  display: none;
 }
 
 .wrapper {
@@ -52,6 +56,20 @@ a {
   box-shadow: 0 2px 2px rgba(172,16,0,.64);
   cursor: pointer;
   color: #ffffff;
+}
+
+.button:hover {
+  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .visually-hidden {
@@ -108,6 +126,8 @@ a {
 .user-menu {
   display: flex;
   list-style: none;
+  font-size: 14px;
+  margin-top: 25px;
 }
 
 .user-menu li {
@@ -129,7 +149,7 @@ a {
   background-position: 0 0;
   fill: #fff;
   position: absolute;
-  top: 2px;
+  top: -2px;
   right: 55px;
   width: 23px;
   height: 23px;
@@ -142,7 +162,7 @@ a {
   background-position: 0 0;
   fill: #fff;
   position: absolute;
-  top: 2px;
+  top: -2px;
   right: 82px;
   width: 23px;
   height: 23px;
@@ -416,10 +436,11 @@ a {
 .site-info {
   text-decoration: underline;
   display: flex;
-  width: 350px;
+  width: 300px;
   flex-wrap: wrap;
   list-style: none;
   position: relative;
+  font-size: 13px;
 }
 
 .heart-icon::before {
@@ -437,6 +458,7 @@ a {
 .map {
   margin-left: -27px;
   position: relative;
+  margin-bottom: 18px;
 }
 
 .address {
@@ -445,6 +467,9 @@ a {
   color: #323232;
   padding: 35px 25px;
   border-radius: 15px;
+  position: absolute;
+  top: 60px;
+  right: 27px;
 }
 
 .address span,
@@ -474,6 +499,7 @@ a {
 footer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .social-net {
@@ -485,6 +511,7 @@ footer {
 .social-net li {
   position: relative;
   margin-right: 45px;
+
 }
 
 .social-twitter::before {
@@ -533,6 +560,10 @@ footer {
   background-image: url("../img/vk.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.last {
+  font-size: 13px;
 }
 
 .last a {
@@ -619,3 +650,113 @@ footer {
   display: flex;
 }
 
+.site-wrapper {
+  min-width: 940px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-bottom: 65px;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.site-wrapper::before,
+.site-wrapper::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("../img/slide-2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("../img/slide-3.png");
+}
+
+.content-wrapper {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slider {
+  position: relative;
+
+  padding-top: 270px;
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 60px;
+}
+
+.slide-btn {
+  display: inline-block;
+  padding: 12px 50px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 100px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 20;
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slide-1.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slide-2.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slide-3.png");
+}
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
