@@ -80,10 +80,17 @@ a {
 
 .site-menu-list {
   display: none;
+  list-style: none;
+}
+
+.site-menu-section a{
+  padding: 10px;
 }
 
 .site-menu-section a:hover {
   background: #fff;
+  padding: 10px;
+  border-radius: 25px;
   color: #000;
 }
 
@@ -94,11 +101,51 @@ a {
 
 .header-button {
   background: #a0b4a9;
+  margin-left: 10px;
+  border-radius: 25px;
 }
 
 .user-menu {
   display: flex;
   list-style: none;
+}
+
+.user-menu li {
+  position: relative;
+}
+
+.header-button-sign-in {
+  padding: 5px 15px 5px 45px;
+}
+
+.header-button-cart {
+  padding: 5px 35px 5px 45px;
+}
+
+.header-button-sign-in::before {
+  content: "";
+  background-image: url("../img/entrance.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  fill: #fff;
+  position: absolute;
+  top: 2px;
+  right: 55px;
+  width: 23px;
+  height: 23px;
+}
+
+.header-button-cart::before {
+  content: "";
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  fill: #fff;
+  position: absolute;
+  top: 2px;
+  right: 82px;
+  width: 23px;
+  height: 23px;
 }
 
 .timetable {
@@ -247,6 +294,55 @@ a {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
+  position: relative;
+}
+
+.about-us-ice-cream::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about-us-cow::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about-us-natural::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/eco.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about-us-thermometer::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .about-us li:nth-child(3),
@@ -323,6 +419,19 @@ a {
   width: 350px;
   flex-wrap: wrap;
   list-style: none;
+  position: relative;
+}
+
+.heart-icon::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .map {
@@ -371,6 +480,59 @@ footer {
   display: flex;
   list-style: none;
   padding: 0;
+}
+
+.social-net li {
+  position: relative;
+  margin-right: 45px;
+}
+
+.social-twitter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/twitter.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.social-instagram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/instagram.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.social-facebook::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/fb.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.social-vkontakte::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/vk.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .last a {
