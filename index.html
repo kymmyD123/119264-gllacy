@@ -15,7 +15,7 @@
 
 <div class="site-wrapper">
   <div class="content-wrapper">
-    <header>
+    <header class="main-header">
 
       <div class="wrapper-menu">
 
@@ -168,7 +168,7 @@
             <a href="#">
               <img src="img/content-item-1.png" width="267" height="267" alt="catalog-item">
               <div class="price-wrapper">
-                <span class="price">310 &#8381;</span>
+                <span class="price">310</span>
                 <span class="count-size">/кг</span>
               </div>
               <h2 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
@@ -178,7 +178,7 @@
             <a href="#">
               <img src="img/content-item-2.png" width="267" height="267" alt="catalog-item">
               <div class="price-wrapper">
-                <span class="price">380 &#8381;</span>
+                <span class="price">380</span>
                 <span class="count-size">/кг</span>
               </div>
               <h2 class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</h2>
@@ -188,7 +188,7 @@
             <a href="#">
               <img src="img/content-item-3.png" width="267" height="267" alt="catalog-item">
               <div class="price-wrapper">
-                <span class="price">355 &#8381;</span>
+                <span class="price">355</span>
                 <span class="count-size">/кг</span>
               </div>
               <h2 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h2>
@@ -198,7 +198,7 @@
             <a href="#">
               <img src="img/content-item-4.png" width="267" height="267" alt="catalog-item">
               <div class="price-wrapper">
-                <span class="price">415 &#8381;</span>
+                <span class="price">415</span>
                 <span class="count-size">/кг</span>
               </div>
               <h2 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h2>
@@ -344,7 +344,8 @@
         </li>
       </ul>
       <div class="copyright">
-        <a class="copyright-image" href="#"><img src="img/logo-htmlacademy.svg" width="110" height="40" alt="htmlacademy"></a>
+        <a class="copyright-image" href="#"><img src="img/logo-htmlacademy.svg" width="110" height="40"
+                                                 alt="htmlacademy"></a>
         <p>Сделано в <a href="htmlacademy.ru">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
@@ -353,10 +354,22 @@
 <section class="form">
   <h2 class="visually-hidden">Регистрационная форма</h2>
   <p>Мы обязательно вам ответим!</p>
-  <input type="text" placeholder="Как вас зовут?">
-  <input type="text" placeholder="Ваша почта для ответа?">
-  <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-  <button type="submit">Отправить</button>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <div class="form-group">
+      <input class="form-input" id="text" type="text">
+      <label class="form-label" for="text">Как вас зовут?</label>
+    </div>
+    <div class="form-group">
+      <input class="form-input" id="email-answer" type="email">
+      <label class="form-label" for="email-answer">Ваша почта для ответа?</label>
+    </div>
+    <div class="form-group">
+      <textarea class="form-input" name="comment" id="comment"></textarea>
+      <label class="form-label" for="comment">Напишите что-нибудь...</label>
+    </div>
+    <button class="button" type="submit">Отправить</button>
+  </form>
+  <button class="close-button" type="button">Закрыть</button>
 </section>
 
 </body>
