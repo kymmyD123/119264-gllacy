@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
@@ -8,15 +7,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
 <div class="content-wrapper">
-
   <header class="main-header">
-
     <div class="wrapper-menu">
-
       <div class="left-side-wrapper-menu">
         <a class="logo" href="index.html">
           <img src="img/logo.svg" width="155" height="65" alt="logo">
@@ -24,17 +18,17 @@
         <nav class="main-navigation">
           <ul class="site-menu">
             <li class="site-menu-section site-menu-catalog site-menu-catalog-active">
-              <a href="catalog.html">
+              <a href="#">
                 <span>Каталог</span>
               </a>
               <ul class="site-menu-list">
                 <li>
                   <a class="site-menu-link-new" href="#">Новинки</a>
                 </li>
-                <li>
-                  <a href="#">Сливочное</a>
-                </li>
                 <li class="site-menu-link-active">
+                  <a href="catalog.html">Сливочное</a>
+                </li>
+                <li>
                   <a href="#">Щербеты</a>
                 </li>
                 <li>
@@ -45,12 +39,19 @@
                 </li>
               </ul>
             </li>
-            <li class="site-menu-section"><a href="#"><span>Доставка и оплата</span></a></li>
-            <li class="site-menu-section"><a href="#"><span>О Компании</span></a></li>
+            <li class="site-menu-section">
+              <a href="#">
+                <span>Доставка и оплата</span>
+              </a>
+            </li>
+            <li class="site-menu-section">
+              <a href="#">
+                <span>О Компании</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
-
       <div class="right-side-wrapper-menu">
         <ul class="user-menu">
           <li class="user-menu-search">
@@ -146,15 +147,18 @@
       <span>С 10 до 20, ежедневно</span>
       <span class="phone-number"> 8 812 450-25-25</span>
     </p>
-
   </header>
-
   <main>
-
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li class="breadcrumbs-current"><a>Сливочное</a></li>
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="catalog.html">Каталог</a>
+      </li>
+      <li class="breadcrumbs-current">
+        <a>Сливочное</a>
+      </li>
     </ul>
     <h1 class="page-title">Сливочное мороженое</h1>
     <form class="filters" action="https://echo.htmlacademy.ru" method="post">
@@ -172,7 +176,6 @@
           </svg>
         </div>
       </fieldset>
-
       <fieldset class="filter-item filter-item-price">
         <legend>Цена:</legend>
         <div class="price-controls">
@@ -201,7 +204,6 @@
             <span class="visually-hidden">Больше</span></button>
         </div>
       </fieldset>
-
       <fieldset class="filter-item">
         <legend>Жирность:</legend>
         <ul class="filter-item-fat">
@@ -223,7 +225,6 @@
           </li>
         </ul>
       </fieldset>
-
       <fieldset class="filter-item">
         <legend>Наполнители:</legend>
         <ul class="filter-item-products">
@@ -251,7 +252,6 @@
       </fieldset>
       <button class="button-accept" type="submit">Применить</button>
     </form>
-
     <section class="catalog">
       <article class="catalog-item">
         <a href="#">
@@ -386,20 +386,31 @@
         <a class="button" href="#">Быстрый просмотр</a>
       </article>
       <ul class="pagination">
-        <li class="pagination-disabled pagination-previous"><a href="#">Назад</a></li>
-        <li class="pagination-current"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li class="pagination-next"><a href="#">Вперед</a></li>
+        <li class="pagination-disabled pagination-previous">
+          <a href="#">Назад</a>
+        </li>
+        <li class="pagination-current">
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">5</a>
+        </li>
+        <li class="pagination-next">
+          <a href="#">Вперед</a>
+        </li>
       </ul>
     </section>
-
   </main>
-
   <footer class="main-footer">
-
     <ul class="social-net">
       <li class="social-item social-twitter">
         <a href="#">
@@ -445,11 +456,10 @@
       </li>
     </ul>
     <div class="copyright">
-      <a class="copyright-image" href="#"><img src="img/logo-htmlacademy.svg" width="110" height="40" alt="htmlacademy"></a>
-      <p>Сделано в <a class="htmlacademy-link" href="htmlacademy.ru">HTML Academy</a> &copy; 2017</p>
+      <a class="copyright-image" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="110" height="40" alt="htmlacademy"></a>
+      <p>Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
     </div>
   </footer>
-
 </div>
 </body>
 </html>
