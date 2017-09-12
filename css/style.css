@@ -552,7 +552,7 @@ a {
   margin-right: 15px;
 }
 
-.cart-product-name {
+.content-wrapper .cart-product-name {
   width: 216px;
   margin-right: 32px;
   margin-top: 11px;
@@ -571,7 +571,7 @@ a {
   margin-top: 11px;
 }
 
-.total-price {
+.content-wrapper .total-price {
   text-align: right;
   padding: 15px 0;
   font-size: 15px;
