@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
@@ -270,7 +270,7 @@
       <span>Для заказов по телефону:</span>
       <b>8 812 450-25-25</b>
       <span>(с 10 до 20 ежедневно)</span>
-      <a class="button" href="form.html">Форма обратной связи</a>
+      <a class="button address-button" href="form.html">Форма обратной связи</a>
     </div>
   </section>
   <footer class="main-footer content-wrapper">
@@ -321,22 +321,22 @@
     <div class="copyright">
       <a class="copyright-image" href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy<img src="img/logo-htmlacademy.svg"
                                                                                       width="110" height="40"
-                                                                                      alt="htmlacademy"></a>
+                                                                                      alt="htmlacademy" title="htmlacademy"></a>
       <p>Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;
         2017</p>
     </div>
   </footer>
 </div>
-<section class="form">
+<section class="form modal-login">
   <h2 class="visually-hidden">Регистрационная форма</h2>
   <p>Мы обязательно вам ответим!</p>
   <form action="https://echo.htmlacademy.ru" method="post">
     <div class="form-group">
-      <input class="form-input" id="text" type="text">
+      <input class="form-input" id="text" type="text" name="login">
       <label class="form-label" for="text">Как вас зовут?</label>
     </div>
     <div class="form-group">
-      <input class="form-input" id="email-answer" type="email">
+      <input class="form-input" id="email-answer" type="email" name="email">
       <label class="form-label" for="email-answer">Ваша почта для ответа?</label>
     </div>
     <div class="form-group">
@@ -347,5 +347,7 @@
   </form>
   <button class="close-button" type="button">Закрыть</button>
 </section>
+<div class="overlay"></div>
+<script src="js/script.min.js"></script>
 </body>
 </html>
