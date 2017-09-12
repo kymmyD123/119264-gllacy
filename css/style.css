@@ -11,7 +11,7 @@ body > input[type="radio"] {
   display: none;
 }
 
-h1 {
+.content-wrapper h1 {
   font-size: 35px;
   line-height: 30px;
   color: #fff;
@@ -19,14 +19,14 @@ h1 {
   margin: 0;
 }
 
-h2 {
+.content-wrapper h2 {
   font-size: 16px;
   line-height: 12px;
   color: #fff;
   font-weight: 500;
 }
 
-p {
+.content-wrapper p {
   margin: 0;
 }
 
@@ -341,7 +341,7 @@ a {
   align-items: flex-start;
 }
 
-.form-link-wrapper {
+.content-wrapper .form-link-wrapper {
   margin-left: 20px;
 }
 
@@ -513,7 +513,7 @@ a {
   margin-top: 11px;
 }
 
-.cart-quantity {
+.content-wrapper .cart-quantity {
   margin-right: 27px;
   margin-top: 11px;
 }
@@ -684,7 +684,7 @@ a {
   color: #ffffff;
 }
 
-.page-title {
+.content-wrapper .page-title {
   margin-bottom: 35px;
 }
 
@@ -998,10 +998,6 @@ a {
   width: 369px;
 }
 
-.subscribe button {
-
-}
-
 .map {
   position: relative;
   background-color: #F6F0E1;
@@ -1068,7 +1064,7 @@ a {
   margin-bottom: 20px;
 }
 
-.address button {
+.address .button {
   margin-top: 28px;
   padding: 10px 28px;
 }
@@ -1190,6 +1186,7 @@ a {
 
 .copyright-image {
   display: block;
+  font-size: 0;
   margin-left: 15px;
 }
 
@@ -1572,7 +1569,7 @@ a {
 .form {
   display: none;
   position: fixed;
-  top: 150px;
+  top: 100px;
   left: 0;
   right: 0;
   z-index: 100;
