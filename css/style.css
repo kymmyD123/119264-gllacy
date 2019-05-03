@@ -1620,7 +1620,6 @@ a {
 .content-wrapper {
   width: 1146px;
   margin: 0 auto;
-  padding: 0 27px;
 }
 
 .slider {
@@ -1918,3 +1917,48 @@ a {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
+
+.main-wrapper form {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.left-column {
+  position: relative;
+  width: 225px;
+}
+
+.left-column .form-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.right-column {
+  width: 355px;
+}
+
+.right-column .form-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.address-column {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.address-column .form-input {
+  width: 100%;
+}
+
+.main-wrapper form .button {
+  margin: 0 auto;
+}
+
+
